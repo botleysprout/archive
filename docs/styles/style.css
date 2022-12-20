@@ -3,6 +3,12 @@ body {
   background-color: lightgreen;
 }
 
+#banner {
+  max-width: 100vw;
+  max-height: 50vh;
+  aligh: center;
+}
+
 div.img {
   margin:2px;
   float:left;
