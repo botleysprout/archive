@@ -4,7 +4,8 @@ body {
 }
 
 #banner {
-  max-width: 100vw;
+  max-width: 95vw;
+  width: 40em;
   max-height: 50vh;
   aligh: center;
 }
