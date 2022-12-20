@@ -16,9 +16,12 @@ div.img {
 div.img img {
   display:inline;
   margin:3px;
+  max-width: 95vw;
+  max-height: 100vw;
 }
 form {
   background-color: darkgreen;
+  max-width: 95vw;
   width: 30em;
   height: 3em;
   border-radius: 5px;
