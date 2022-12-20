@@ -9,16 +9,6 @@ body {
   aligh: center;
 }
 
-div.img {
-  margin:2px;
-  float:left;
-}
-div.img img {
-  display:inline;
-  margin:3px;
-  max-width: 95vw;
-  max-height: 100vw;
-}
 form {
   background-color: darkgreen;
   max-width: 95vw;
@@ -56,6 +46,17 @@ button {
   cursor: pointer;
   width: 44px;
   height: 44px;
+}
+
+div.img {
+  margin:2px;
+  float:left;
+}
+div.img img {
+  display:inline;
+  margin:3px;
+  max-width: 95vw;
+  max-height: 100vw;
 }
 
 ul {
