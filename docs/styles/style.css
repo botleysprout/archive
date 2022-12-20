@@ -1,28 +1,15 @@
 
 body {
   background-color: lightgreen;
-  margin: 10 auto;
-  float: none;
 }
 
 div.img {
   margin:2px;
-  height:auto;
-  width:auto;
   float:left;
-  text-align:left;
 }
 div.img img {
   display:inline;
   margin:3px;
-  border:1px solid #ffffff;
-}
-div.img a:hover img {
-  border:1px solid #0000ff;
-}
-div.desc {
-  text-align:left;
-  font-weight:normal;
 }
 form {
   background-color: darkgreen;
