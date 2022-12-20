@@ -13,8 +13,8 @@ div.img img {
 }
 form {
   background-color: darkgreen;
-  width: 300px;
-  height: 44px;
+  width: 30em;
+  height: 3em;
   border-radius: 5px;
   display:flex;
   flex-direction:row;
