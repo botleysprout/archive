@@ -13,10 +13,10 @@ possibly_relative_path_to_repo_root="$(dirname "$0")"
 absolute_path_to_repo_root="$(cd "$possibly_relative_path_to_repo_root" ; pwd )"
 REPO_ROOT="$absolute_path_to_repo_root"
 
-echo "About to use pdf2htmlex to generate HTML versions of every PDF in '${REPO_ROOT}/docs/pdfs'..."
+echo "About to use pdf2htmlex to generate HTML versions of every PDF in '${REPO_ROOT}/docs/issues'..."
 echo
 
-for pdf in $(ls "${REPO_ROOT}/docs/pdfs/"*.pdf)
+for pdf in $(ls "${REPO_ROOT}/docs/issues/"*.pdf)
 do
         echo "Checking to see if "${pdf/.pdf/.html}" already exists..."
         if [[ ! -e "${pdf/.pdf/.html}" ]]
@@ -26,7 +26,7 @@ do
                 docker run \
                         -ti \
                         --rm \
-                        -v "${REPO_ROOT}/docs/pdfs":/pdf \
+                        -v "${REPO_ROOT}/docs/issues":/pdf \
                         -w /pdf \
                         "pdf2htmlex/pdf2htmlex:${PDF2HTML_VERSION}" \
                         --zoom 1.3 \
