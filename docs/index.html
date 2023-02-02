@@ -28,16 +28,92 @@
       </p>
           You can read some past copies here:
       </p>
-      <ul>
-        <li>December 2022: <a href="./issues/2022-12.pdf">download pdf</a> or <a href="./issues/2022-12.html">read html</a></li>
-        <li>November 2022: <a href="./issues/2022-11.pdf">download pdf</a> or <a href="./issues/2022-11.html">read html</a></li>
-        <li>September 2022: <a href="./issues/2022-09.pdf">download pdf</a> or <a href="./issues/2022-09.html">read html</a></li>
-        <li>July 2022: <a href="./issues/2022-07.pdf">download pdf</a> or <a href="./issues/2022-07.html">read html</a></li>
-        <li>June 2022: <a href="./issues/2022-06.pdf">download pdf</a> or <a href="./issues/2022-06.html">read html</a></li>
-        <li>May 2022: <a href="./issues/2022-05.pdf">download pdf</a> or <a href="./issues/2022-05.html">read html</a></li>
-        <li>April 2022: <a href="./issues/2022-04.pdf">download pdf</a> or <a href="./issues/2022-04.html">read html</a></li>
-        <li>March 2022: <a href="./issues/2022-03.pdf">download pdf</a> or <a href="./issues/2022-03.html">read html</a></li>
-      </ul>
+      
+        <form name="dropdown">
+		 <label for="dropdown">Choose an issue:</label>
+		 <select name="list" id="html">
+		 
+		 <optgroup label="2022">
+		 <option value="https://archive.thesprout.org.uk/issues/2022-03.html">2022-03</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-04.html">2022-04</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-05.html">2022-05</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-06.html">2022-06</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-07.html">2022-07</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-09.html">2022-09</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-10.html">2022-10</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-11.html">2022-11</option>
+		 </optgroup>
+		 
+		 <optgroup label="2021">
+		 <option value="https://archive.thesprout.org.uk/issues/2022-03.html">2021-03</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-04.html">2021-04</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-05.html">2021-05</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-06.html">2021-06</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-07.html">2021-07</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-09.html">2021-09</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-10.html">2022-10</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-11.html">2021-11</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-12.html">2021-12</option>
+		 </optgroup>
+		</select>
+		 
+		<script type="text/javascript">
+		function goToNewPage(dropdownlist)
+		 {
+		 var url = dropdownlist.value;
+		 if (url != "")
+		 {
+		 window.open(url);
+		 }
+		 }
+		</script> 
+		<input type=button value="Go" onclick="goToNewPage(document.dropdown.html)">
+		</form>
+
+
+		<form name="droppdf">
+		 <label for="droppdf">   Choose a pdf: </label>
+		 <select name="pdf" id="pdf">
+		 
+		 <optgroup label="2022">
+		  
+		 <option value="https://archive.thesprout.org.uk/issues/2022-03.pdf">2022-03</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-04.pdf">2022-04</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-05.pdf">2022-05</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-06.pdf">2022-06</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-07.pdf">2022-07</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-09.pdf">2022-09</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-10.pdf">2022-10</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-11.pdf">2022-11</option>
+		 </optgroup>
+		 
+		 <optgroup label="2021">
+		 <option value="https://archive.thesprout.org.uk/issues/2022-03.pdf">2021-03</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-04.pdf">2021-04</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-05.pdf">2021-05</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-06.pdf">2021-06</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-07.pdf">2021-07</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2022-09.pdf">2021-09</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-10.pdf">2022-10</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-11.pdf">2021-11</option>
+		 <option value="https://archive.thesprout.org.uk/issues/2021-12.pdf">2021-12</option>
+		 </optgroup>
+		</select>
+		<script type="text/javascript">
+		function goToNewPage(dropdownlist)
+		 {
+		 var url = dropdownlist.value;
+		 if (url != "")
+		 {
+		 window.open(url);
+		 }
+		 }
+
+		</script>
+		 
+		<input type=button value="Go" onclick="goToNewPage(document.droppdf.pdf)">
+		</form>
+		  
     </div>
 
   </body>
