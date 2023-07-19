@@ -7,7 +7,7 @@ set -euo pipefail
 #
 # PDF2HTML_VERSION="0.20.0" ./generate-html-issues.bash
 
-PDF2HTML_VERSION="${PDF2HTML_VERSION:-"0.18.8.rc2-master-20200820-alpine-3.12.0-x86_64"}"
+PDF2HTML_VERSION="${PDF2HTML_VERSION:-"0.18.8.rc2-master-20200820-ubuntu-20.04-x86_64"}"
 
 possibly_relative_path_to_repo_root="$(dirname "$0")"
 absolute_path_to_repo_root="$(cd "$possibly_relative_path_to_repo_root" ; pwd )"
