@@ -1,15 +1,16 @@
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sprout Archive</title>
-    <link href="styles/style.css" rel="stylesheet" />
+	<link href="styles/style.css" rel="stylesheet" />
   </head>
-  <body>
+	
+  <body bgcolor="#A2E4B8">
     <img id="banner" src="img/banner-logo.png" alt="The Botley Sprout"/>
-
     <h1> The Sprout Archive</h1>
 
-    <p>
+    
     The Sprout is Botley’s local magazine. It is delivered through the door of
     every house in North Hinksey Parish ten times a year. It was set up in 2005
     to keep Botley informed, and it keeps going through the combined efforts of
@@ -18,153 +19,28 @@
     from a small village on the outer edges of Berkshire to a thriving suburb
     of Oxford. This online archive is designed to keep this treasure trove of
     local history safe for future generations.
-    </p>
     
-	<form action="https://www.google.com/search" method="get" target="_blank">
-        <label for="query">Get issues containing search term:</label>
+	<P>
+	To search the archive, enter a search term below. Click Search .
+	You will see search results including page numbers. 
+	Click on one of the search result links to go to the PDF issue.
+	A new tab will open showing the PDF.</P>
+	<P> 
+	Type Ctrl and F keys together to open a search box at the top of the new page.
+	Enter a search term into this box and click on the 
+	down arrow repeatedly to find the hits in the Sprout issue.</P>
+	 
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="query">Search PDF files on https://archive.thesprout.org.uk/ :</label>
         <input type="text" name="q" id="query" placeholder="Enter search terms">
         <input type="hidden" name="sitesearch" value="https://archive.thesprout.org.uk/">
         <input type="hidden" name="q" value="filetype:pdf">
         <input type="submit" value="Search">
-	</form>
-	
-     <div class="img">
+    </form>
+    <div class="img">
       <img src="./img/jubilee-beacon.png" width="383" height="544" alt=" Jubilee Beacon">
       <div class="desc">Jubilee Beacon alight, June 2022</div>
-    </div>
-
-    <div id=issueList>
-      </p>
-          You can read some past copies here:
-      </p>
-      
-     
-		<form name="droppdf">
-		 <label for="droppdf">   Choose an issue: </label>
-		 <select name="pdf" id="pdf">
-		 
-		 <optgroup label="2024">
-		 <option value="https://archive.thesprout.org.uk/issues/2024-02.pdf">2024-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-03.pdf">2024-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-04.pdf">2024-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-05.pdf">2024-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-06.pdf">2024-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-07.pdf">2024-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-09.pdf">2024-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-10.pdf">2024-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-11.pdf">2024-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2024-12.pdf">2024-12</option>
-		 </optgroup>
-		  
-		 <optgroup label="2023">
-		 <option value="https://archive.thesprout.org.uk/issues/2023-02.pdf">2023-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-03.pdf">2023-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-04.pdf">2023-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-05.pdf">2023-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-06.pdf">2023-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-07.pdf">2023-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-09.pdf">2023-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-10.pdf">2023-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-11.pdf">2023-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2023-12.pdf">2023-12</option>
-		 </optgroup>
-		  
-		 <optgroup label="2022">
-		 <option value="https://archive.thesprout.org.uk/issues/2022-02.pdf">2022-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-03.pdf">2022-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-04.pdf">2022-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-05.pdf">2022-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-06.pdf">2022-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-07.pdf">2022-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-09.pdf">2022-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-10.pdf">2022-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-11.pdf">2022-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2022-12.pdf">2022-12</option>
-		 </optgroup>
-		 
-		 <optgroup label="2021">
-		 <option value="https://archive.thesprout.org.uk/issues/2021-03.pdf">2021-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-04.pdf">2021-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-05.pdf">2021-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-06.pdf">2021-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-07.pdf">2021-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-09.pdf">2021-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-10.pdf">2022-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-11.pdf">2021-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2021-12.pdf">2021-12</option>
-		 </optgroup>
-
-		 <optgroup label="2020">
-		 <option value="https://archive.thesprout.org.uk/issues/2020-02.pdf">2020-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-03.pdf">2020-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-04.pdf">2020-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-05.pdf">2020-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-06.pdf">2020-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-07.pdf">2020-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-09.pdf">2020-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-10.pdf">2022-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-11.pdf">2020-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2020-12.pdf">2020-12</option>
-		 </optgroup>
-
-		 <optgroup label="2019">
-		 <option value="https://archive.thesprout.org.uk/issues/2019-02.pdf">2019-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-03.pdf">2019-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-04.pdf">2019-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-05.pdf">2019-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-06.pdf">2019-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-07.pdf">2019-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-09.pdf">2019-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-10.pdf">2022-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-11.pdf">2019-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2019-12.pdf">2019-12</option>
-		 </optgroup>
-
-		 <optgroup label="2018">
-		 <option value="https://archive.thesprout.org.uk/issues/2018-02.pdf">2018-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-03.pdf">2018-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-04.pdf">2018-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-05.pdf">2018-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-06.pdf">2018-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-07.pdf">2018-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-09.pdf">2018-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-10.pdf">2018-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-11.pdf">2018-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2018-12.pdf">2018-12</option>
-		 </optgroup>
-
-		 <optgroup label="2017">
-		 <option value="https://archive.thesprout.org.uk/issues/2017-02.pdf">2017-02</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-03.pdf">2017-03</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-04.pdf">2017-04</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-05.pdf">2017-05</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-06.pdf">2017-06</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-07.pdf">2017-07</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-09.pdf">2017-09</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-10.pdf">2017-10</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-11.pdf">2017-11</option>
-		 <option value="https://archive.thesprout.org.uk/issues/2017-12.pdf">2017-12</option>
-		 </optgroup>
-
-		</select>
-		<script type="text/javascript">
-		function goToNewPage(dropdownlist)
-		 {
-		 var url = dropdownlist.value;
-		 if (url != "")
-		 {
-		 window.open(url);
-		 }
-		 }
-
-		</script>
-		 
-		<input type=button value="Go" onclick="goToNewPage(document.droppdf.pdf)">
-        </form>
-		<a href="https://www.howtogeek.com/721441/how-to-download-pdfs-instead-of-previewing-them-in-chrome-firefox-and-edge/#:~:text=In%20Settings%2C%20click%20%E2%80%9CCookies%20and%20site%20permissions%E2%80%9D%20on,download%20PDF%20files%E2%80%9D%20option%20here.%20You%E2%80%99re%20all%20set."> PDF downloading help</a>
-    </div>
-	
-
+    </div
 	
    <div class="img">
       <img src="./img/Fireworks.jpg" width="383" height="308" alt="A magnificent fireworks display lights up the sky behind the Elms Parade shops.">
@@ -173,3 +49,4 @@
 
   </body>
 </html>
+
